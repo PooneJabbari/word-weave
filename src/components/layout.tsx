@@ -20,7 +20,7 @@ export const Layout: FC<PropsWithChildren<Props>> = ({
       style={{
         fontFamily: "Ubuntu"
       }}>
-      <div className="fixed right-0 z-50 bg-slate-200 pt-16 h-full p-1">
+      <div className="fixed right-0 z-50 bg-slate-100 pt-16 h-full p-1">
         <div className="flex flex-col space-y-6">
           {tabs.map((tab) => (
             <Item

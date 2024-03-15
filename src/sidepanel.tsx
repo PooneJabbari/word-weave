@@ -6,7 +6,8 @@ import { useState } from "react"
 
 import { Layout } from "~components/layout"
 import { NotePencilIcon, TranslateIcon } from "~components/ui"
-import { Translation } from "~tabs/translation"
+import { Translate } from "~tabs/translate"
+import { Write } from "~tabs/write"
 
 const tabs = [
   { title: "Translate", Icon: TranslateIcon },
@@ -28,7 +29,7 @@ function IndexSidePanel() {
         tabs={tabs}
         activeTab={tab}
         onChange={(tab) => setTab(tab as TTab)}>
-        {tab === "Translate" ? <Translation /> : "Write"}
+        {tab === "Translate" ? <Translate /> : <Write />}
       </Layout>
     </QueryClientProvider>
   )

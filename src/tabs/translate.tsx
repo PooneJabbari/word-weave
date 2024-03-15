@@ -3,11 +3,11 @@ import { useEffect, type FC } from "react"
 import { Controller, useForm } from "react-hook-form"
 
 import { getTranslation } from "~api"
-import { Input, Label, Output } from "~components/ui"
+import { DebounceInput, Input, Label, Output } from "~components/ui"
 
 type FormSchema = { input: string }
 
-export const Translation: FC = () => {
+export const Translate: FC = () => {
   const { control, watch } = useForm<FormSchema>({
     defaultValues: { input: "" }
   })
@@ -31,7 +31,7 @@ export const Translation: FC = () => {
         name="input"
         render={({ field: { onChange, value } }) => {
           return (
-            <Input
+            <DebounceInput
               value={value}
               debounce={500}
               onChange={onChange}
