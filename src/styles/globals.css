@@ -6,6 +6,6 @@
   font-family: "Ubuntu";
   src:
     local("UbuntuRegular"),
-    url("./fonts/Goldman/Ubuntu-Regular.ttf") format("truetype");
+    url("../font/Ubuntu-Regular.ttf") format("truetype");
   font-weight: bold;
 }
