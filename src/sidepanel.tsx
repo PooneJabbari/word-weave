@@ -1,15 +1,16 @@
-import { useState } from "react"
+import { InputWithLabel } from "~components/ui"
 
 function IndexSidePanel() {
-  const [data, setData] = useState("")
-
   return (
     <div
       style={{
+        fontFamily: "Ubuntu",
         display: "flex",
         flexDirection: "column",
         padding: 16
-      }}></div>
+      }}>
+      <InputWithLabel />
+    </div>
   )
 }
 
