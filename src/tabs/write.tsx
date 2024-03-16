@@ -1,5 +1,5 @@
-import { useMutation, useQuery } from "@tanstack/react-query"
-import { useEffect, type FC } from "react"
+import { useMutation } from "@tanstack/react-query"
+import { type FC } from "react"
 import { Controller, useForm } from "react-hook-form"
 
 import { getGeneration } from "~api"

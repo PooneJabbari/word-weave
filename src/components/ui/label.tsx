@@ -1,9 +1,7 @@
-"use client"
-
 import { type FC, type PropsWithChildren } from "react"
 import { cn } from "src/utils"
 
-const Label: FC<PropsWithChildren & { className?: string }> = ({
+export const Label: FC<PropsWithChildren & { className?: string }> = ({
   children,
   className
 }) => {
@@ -17,5 +15,3 @@ const Label: FC<PropsWithChildren & { className?: string }> = ({
     </p>
   )
 }
-
-export { Label }

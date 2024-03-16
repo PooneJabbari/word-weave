@@ -1,9 +1,9 @@
-import { useMutation, useQuery } from "@tanstack/react-query"
+import { useMutation } from "@tanstack/react-query"
 import { useEffect, type FC } from "react"
 import { Controller, useForm } from "react-hook-form"
 
 import { getTranslation } from "~api"
-import { DebounceInput, Input, Label, Output } from "~components/ui"
+import { DebounceInput, Label, Output } from "~components/ui"
 
 type FormSchema = { input: string }
 

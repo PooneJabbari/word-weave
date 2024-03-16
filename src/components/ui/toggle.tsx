@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import * as React from "react"
 import { cn } from "src/utils"
 
-const toggleVariants = cva(
+export const toggleVariants = cva(
   "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-blue-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-blue-950 disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-blue-200 data-[state=on]:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-400 dark:focus-visible:ring-slate-300 dark:data-[state=on]:bg-slate-800 dark:data-[state=on]:text-slate-50",
   {
     variants: {
@@ -27,7 +27,7 @@ const toggleVariants = cva(
   }
 )
 
-const Toggle = React.forwardRef<
+export const Toggle = React.forwardRef<
   React.ElementRef<typeof TogglePrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof TogglePrimitive.Root> &
     VariantProps<typeof toggleVariants>
@@ -40,5 +40,3 @@ const Toggle = React.forwardRef<
 ))
 
 Toggle.displayName = TogglePrimitive.Root.displayName
-
-export { Toggle, toggleVariants }

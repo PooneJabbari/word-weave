@@ -10,6 +10,7 @@ export const getTranslation = (input: string) => {
       }
     ]
   }
+  if (!input.length) return
   return axios
     .post("https://api.deepseek.com/v1/chat/completions", data, {
       headers: {
@@ -38,6 +39,7 @@ export const getGeneration = ({
       }
     ]
   }
+  if (!input.length) return
   return axios
     .post("https://api.deepseek.com/v1/chat/completions", data, {
       headers: {
