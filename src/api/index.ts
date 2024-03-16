@@ -23,10 +23,10 @@ export const getTranslation = (input: string) => {
 export const getGeneration = ({
   input,
   format,
-  size
+  length
 }: {
   input: string
-  size: string
+  length: string
   format: string
 }) => {
   const data = {
@@ -34,7 +34,7 @@ export const getGeneration = ({
     messages: [
       {
         role: "user",
-        content: `Please rewrite below text in length ${size} and format ${format} in English:"${input}"`
+        content: `Please rewrite below text in length ${length} and format ${format} in English:"${input}"`
       }
     ]
   }
