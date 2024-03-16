@@ -8,7 +8,7 @@ const buttonStyles = cva(
     variants: {
       variant: {
         outlined: "bg-transparent border",
-        filled: "text-white border-transparent text-md font-medium text-white",
+        filled: "text-white border-transparent text-md font-medium",
         content: "bg-transparent border-transparent p-0",
         icon: "bg-transparent border-transparent p-2"
       }
